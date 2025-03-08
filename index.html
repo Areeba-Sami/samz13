@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            text-align: center;
+            background-color: #f1ccdf; /* Light blue background */
+        }
+
+        /* Navigation Bar Styles */
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            background-color: #d4789e; /* Blue background for navigation */
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(3, 3, 3);
+            
+            font-weight: bold; /* Bold navigation text */
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table Styles */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 3px solid rgba(235, 71, 158, 0.845);
+            font-weight: bold;
+        }
+        th, td {
+            padding: 10px;
+        }
+
+        /* Form and Video Styles */
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        form input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+        }
+        video {
+            margin: 20px 0;
+        }
+
+        /* About Me Section Styles */
+        #about p {
+            text-align: center; /* Center-align About Me text */
+        }
+        #contact p {
+            text-align: center; /* Center-align contact Me text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+       
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>  Hello! I'm Areeba Sami I'm here in Samz doing a internship in frontend developer.I'm not so Proficiency in this field but I'm here to learn and practice my work which improve my coding skills</p>   
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>1. E-Commerce Website</h3>
+        <p>An online shopping platform with secure payment integration and dynamic user interface.</p>
+        <h3>2. Portfolio Builder</h3>
+        <p>A tool that helps users create their personalized portfolio quickly and easily.</p>
+        <h3>3. Weather App</h3>
+        <p>A responsive app that provides real-time weather updates for any location.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Introduction Video</h2>
+        <video controls width="640" height="360">
+            <source src="videeo.mp4" type="video/mp4">
+        </video>
+        </section>
+
+            <section>
+            <h3>Audio</h3>
+            <audio controls> 
+                <source src="audio.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+              </audio>
+            
+      
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
